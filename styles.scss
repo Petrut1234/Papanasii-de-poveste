@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import "assets/fonts/css/fontello.css";
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+
+  .content {
+    .title-description {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+
+      .title {
+        font-size: 28px;
+      }
+
+      .description {
+        font-size: 18px;
+        color: #a19b9b;
+      }
+    }
+
+    .cards {
+      margin-top: 50px;
+
+      .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 200px;
+        margin-top: 40px;
+
+        .card {
+          img {
+            width: 300px;
+            height: 400px;
+            border-radius: 20px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+
+            &.flat {
+              width: 400px;
+              height: 200px;
+            }
+
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .spacer {
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    background: #e5dfdf;
+    padding-left: 20px;
+
+    .copy {
+      text-align: center;
+    }
+
+    img {
+      width: 200px;
+      height: 150px;
+      border-radius: 20%;
+
+    }
+  }
+
+  .header {
+    height: 150px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 100vw;
+    background: #e5dfdf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+
+    img {
+      width: 200px;
+      height: 150px;
+      border-radius: 20%;
+    }
+  }
+
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    strong {
+      font-size: 28px;
+      margin-top: 30px;
+    }
+
+    .fb {
+      display: flex;
+      gap: 20px;
+
+      &-item {
+        font-size: 20px;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+
+        i {
+          font-size: 28px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    .content {
+      .cards {
+        .row {
+          flex-direction: column !important;
+          gap: 50px !important;
+        }
+
+      }
+
+      .title-description {
+        .description {
+          width: 300px;
+          text-align: center;
+        }
+
+      }
+    }
+
+    .spacer {
+      h2 {
+        width: 300px;
+        text-align: center;
+      }
+      .copy{
+        margin-top: 10px;
+      }
+    }
+
+    .footer {
+      strong {
+        width: 300px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+
+
